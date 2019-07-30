@@ -53,7 +53,7 @@ function loadLabeledImages() {
       const descriptions = [];
       for (let i = 1; i <= 2; i++) {
         const img = await faceapi.fetchImage(
-          `https://raw.githubusercontent.com`
+          `https://raw.githubusercontent.com/sjcodebook/AI-Face-Detection/master/labeled_images/${label}/${i}.jpg`
         );
         const detections = await faceapi
           .detectSingleFace(img)
